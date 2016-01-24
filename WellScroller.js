@@ -635,7 +635,7 @@
     wellScroller = function ($container, options) {
         if (!$container) {
             console.trace();
-            throw new Error('Некорректный аргумент Container');
+            throw new Error('Incorrect Argument Container');
         }
         if (!$container.hasOwnProperty('WScroller')) {
             $container.WScroller = new Plugin($container, options);
