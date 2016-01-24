@@ -5,7 +5,7 @@ Allows webmasters to replace the ugly, default OS scrollbar with custom ones tha
 Can be used in vertical or horizontal orientation. <br> You can customize scroller engine by default options or if you wish you  can fork also.
 
 <i>Only 23 kb in uncompressed style and 7 kb compressed.</i>
-Easy to include and launch in your project.
+Easy to include and launch in your project.<br>
 Works in all modern browsers and on touch devices.
 
 <a href="http://wellnine.github.io/WellScroller" target="_blank">Documentation and examples</a>
