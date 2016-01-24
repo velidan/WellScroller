@@ -6,6 +6,7 @@ Can be used in vertical or horizontal orientation. <br> You can customize scroll
 
 <i>Only 23 kb in uncompressed style and 7 kb compressed.</i>
 Easy to include and launch in your project.
+Works in all modern browsers and on touch devices.
 
 <a href="http://wellnine.github.io/WellScroller" target="_blank">Documentation and examples</a>
 
