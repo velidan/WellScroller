@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Well Scroller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="native javascript custom content scroller">
+    <meta name="author" content="Sviatoslav Barbutsa aka Wellnine">
+    <meta name="keywords" content="javascript, native, custom scroller, free">
+
+    <link href="./styles/bootstrapTheme.css" rel="stylesheet">
+    <link href="./styles/customScrollerView.css" rel="stylesheet">
+
+    <link href="./styles/scroller.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+
+    <link rel="icon" href="./images/favicon_wellnine.ico">
+
+</head>
+<body>
+<div id="top-nav" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#how-to">How To</a></li>
+                    <li><a href="#customizing">Customizing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="https://github.com/wellnine/WellScroller/archive/master.zip" class="download"
+                           data-offset-top="450">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="header">
+    <div class="container">
+        <div class="row">
+            <div class="span12 topH">
+                <h1>Well Scroller</h1>
+
+                <h3>Allows webmasters to replace the ugly, default OS scrollbar with custom ones that they create.</h3>
+                <i class="underscore">Only 23 kb in uncompressed style and 7 kb compressed </i>
+                <a class="btn btn-success btn-large" href="https://github.com/wellnine/WellScroller/archive/master.zip">Download for FREE</a>
+                <p class="muted"><a class="muted" href="https://github.com/wellnine/WellScroller">Github</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="demo">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="demoTitle">Demo</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span12 demoBox">
+
+
+            <div class="decorate">
+                <div class="scrollBox vertical">
+                    <div class="viewport">
+                        <div class="overview">
+                            <h2 class="scrollBoxHeader">"Exapmle 1"</h2>
+                            <hr class="scrollBoxLine">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas...</p>
+                            <hr>
+
+                        </div>
+                    </div>
+                    <div class="scrollbar"><div class="thumb"></div></div>
+                </div>
+            </div>
+
+
+                <div class="decorate">
+                    <h2 class="scrollBoxHeader">"Exapmle 2"</h2>
+                    <hr class="scrollBoxLine">
+                    <div class="scrollBox horizontal">
+                        <div class="viewport">
+                            <div class="overview">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+
+                                </p>
+
+
+                            </div>
+                        </div>
+                        <div class="scrollbar"><div class="thumb"></div></div>
+                    </div>
+                </div>
+
+
+
+                <div class="decorate">
+                    <div class="scrollBox vertical scrollDownBtn">
+                        <div class="viewport">
+                            <div class="overview">
+                                <h2 class="scrollBoxHeader">"Exapmle 3"</h2>
+                                <hr class="scrollBoxLine">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas...</p>
+                                <hr>
+
+                            </div>
+                        </div>
+                        <div class="scrollbar"><div class="thumb"></div></div>
+                    </div>
+                    <button class="scrollDown">Scroll Down</button>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="how-to">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>How To Use</h1>
+
+                <h2>1. Include Well Scroller plugin files</h2>
+
+                <pre class="pre-show prettyprint linenums">
+<b>Important Scroller stylesheet</b>
+    1. &lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/scroller.css&quot;&gt;
+
+<b>Customize view stylesheet (used in this demo)</b>
+    2. &lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/customScrollerView.css&quot;&gt;
+
+<b>Include Well Scroller plugin</b>
+    3. &lt;script type=&quot;text/javascript&quot; src=&quot;js/wellScroller.js&quot;&gt;&lt;/script&gt;
+                </pre>
+                <h2>2. Set up your HTML</h2>
+                <p>You need to know that if you want, you can redefine only main scroller selector (.scrollBox). Others are getting inside a plugin.</p>
+				
+				<i><b>Scroller structure without scrollDown button (examle 1)</b></i>
+                <pre class="pre-show prettyprint linenums">
+	&lt;div class=&quot;scrollBox&quot;&gt;
+		&lt;div class=&quot;viewport&quot;&gt;
+			&lt;div class=&quot;overview&quot;&gt;
+			     YOUR CONTENT
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;scrollbar&quot;&gt;&lt;div class=&quot;thumb&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+					</pre>
+
+                <i><b>Scroller horizontal structure (examle 2). Don`t forget to set to content wrapper (p - for example )some fixed width value for overflow.</b></i>
+                <pre class="pre-show prettyprint linenums">
+	&lt;div class=&quot;scrollBox horizontal&quot;&gt;
+		&lt;div class=&quot;viewport&quot;&gt;
+			&lt;div class=&quot;overview&quot;&gt;
+			     &lt;p&gt;YOUR CONTENT&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;scrollbar&quot;&gt;&lt;div class=&quot;thumb&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+					</pre>
+
+					<i><b>Scroller structure with scrollDown button (examle 3)</b></i>
+                <pre class="pre-show prettyprint linenums">
+	&lt;div class=&quot;scrollBox&quot;&gt;
+		&lt;div class=&quot;viewport&quot;&gt;
+			&lt;div class=&quot;overview&quot;&gt;
+			     YOUR CONTENT
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;scrollbar&quot;&gt;&lt;div class=&quot;thumb&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;button class=&quot;scrollDown&quot;&gt;Scroll Down Text&lt;/button&gt;
+					</pre>
+
+
+                <h2>3. Set up your CSS</h2>
+                <p>Scroller has some css rules for correct work, but you need to set your own styles <br>
+                    (height of scroller and horizontal rules for scrollbar and thumb if you want use scroller in horizontal orientation)
+                </p>
+
+                <i><b>Rules of example 1 (only set scrollbar height and width. About width - if you use some wrapper with fixed width, it`s unnecessary)</b></i>
+                <pre class="pre-show prettyprint linenums">
+<i>You can use <b>max-height</b> or <b>height</b></i>
+    .scrollBox {
+        max-height: 470px;
+        width: 270px
+    }
+					</pre>
+
+                <i><b>Horizontal rules of example 2 (set scroller height and customize view of scrollbar and thumb)</b></i>
+                <pre class="pre-show prettyprint linenums">
+	.scrollBox.horizontal {
+		width: 270px;
+		height: 345px;
+	}
+
+	.scrollBox.horizontal .overview {
+	   padding-right: 0;
+	}
+
+	.scrollBox.horizontal .viewport{
+		height: 95%;
+	}
+
+	.scrollBox.horizontal .scrollbar {
+		position: absolute;
+		height: 10px;
+		left: 0;
+		bottom: 0;
+	}
+	.scrollBox.horizontal .thumb {
+		height: 100%;
+	}
+
+
+	.scrollBox.horizontal p {
+		width: 600px;
+		height: 100%;
+		margin: 0;
+		text-align: left;
+	}
+					</pre>
+
+
+                <h2>4. Call the plugin</h2>
+
+                <p>Now pass in to the scroller your parent container (scrollBox by default) and some configure options, if you want.</p>
+                <pre class="pre-show prettyprint linenums">
+    <b>Plugin call syntax looks like this:</b>
+        wellScroller(elem, options);
+        @param elem {HTMLElement} -> parent scroller container
+        @param options [Object] -> some scroller config
+
+     <b class="preSeparate"><i>Example from demo call</i></b>
+    <b>Simple vertical scroller with default options (Exapmle 1)</b>
+         wellScroller(document.querySelector('.scrollBox'));
+
+    <b>Horizontal orientation  (Exapmle 2)</b>
+         wellScroller(document.querySelector('.horizontal'), {
+                        axis : 'x'
+                     });
+
+    <b>With scroll down buttons (Exapmle 3)</b>
+         wellScroller(document.querySelector('.scrollBox'), {
+            scrollDownBtn : document.querySelector('.scrollDown')
+         });
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="customizing">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>Customizing</h1>
+
+                <h2>1. Options </h2>
+
+                <p>Set in options object - secont arameter in scroller call.</p>
+                <table class="table hp-table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Default</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="text-emp">axis</span></td>
+                        <td>y</td>
+                        <td>string</td>
+                        <td>axis of scroller orientation (vertical or horizontal)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">wheelSpeed</span></td>
+                        <td>40</td>
+                        <td>int</td>
+                        <td>Wheel speed modifier</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">wheelLock</span></td>
+                        <td>true</td>
+                        <td>boolean</td>
+                        <td>Lock default window wheel scrolling when there is no more content to scroll.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">touchLock</span></td>
+                        <td>true</td>
+                        <td>boolean</td>
+                        <td>Lock default window touch scrolling when there is no more content to scroll.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">thumbSize</span></td>
+                        <td>false</td>
+                        <td>boolean</td>
+                        <td>Set the size of the thumb to auto(false) or a fixed number</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">thumbSizeMin</span></td>
+                        <td>20</td>
+                        <td>int</td>
+                        <td>Minimum thumb size</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">marginTop</span></td>
+                        <td>false</td>
+                        <td>boolean</td>
+                        <td>
+                            Use 'margin-top' or 'top' to elements position
+                            /td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">marginLeft</span></td>
+                        <td>false</td>
+                        <td>boolean</td>
+                        <td>
+                            Use 'margin-left' or 'left' to elements position
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-emp">scrollDownBtn</span></td>
+                        <td>none</td>
+                        <td>HTMLElement</td>
+                        <td>
+                            Scroll Down Element  for scroll down button possibility
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+
+                <h2>2. Well Scroller core methods</h2>
+
+                <p>Some useful methods that you can use in non-standart situation.</p>
+
+                <pre class="pre-show prettyprint linenums">
+<b>Update all scroller values</b><br><i>(can used when scroller content dynamically changed - can be used with setInterval or requestAnimation or any other your technique)</i>
+    wellScrollerInstance.update();
+                </pre>
+
+                <pre class="pre-show prettyprint linenums">
+<b><i>Update all scroller values with save thumb position </i></b>
+    wellScrollerInstance.updateAndfixScrollBar();
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="faq" class="container">
+    <div class="row">
+        <div class="span12">
+            <h1>FAQ</h1>
+            <dl>
+                <dt>Can i use it for free?</dt>
+                <dd>Yes!</dd>
+                <dt>Can i use it for ecommerce?</dt>
+                <dd>Yes!</dd>
+                <dt>Has it any licence?</dt>
+                <dd>MIT</dd>
+                <dt>Can i ask for a new functionality?</dt>
+                <dd>Yes! Use <a href="https://github.com/wellnine/WellScroller">Github</a> or email: <a href="mailto:velidanx@gmail.com">velidanx@gmail.com</a></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h5>Sviatoslav Barbutsa 2015 / Wellnine /
+                    <a href="mailto:velidanx@gmail.com?subject=Hey_WellScroller!">email</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/WellScroller.js" type="text/javascript"></script>
+<script src="./js/application.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+.topH {
+    text-align: center;
+}
+
+.demoTitle {
+    text-align: center;
+}
+
+.demoBox {
+    background-color: #4A5853;
+    padding: 15px 15px 0;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 980px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+
+}
+
+.demoBox:after{
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.decorate {
+    width: 300px;
+    height: 500px;
+    margin: 0 20px 20px 0;
+    background-color: #ddd;
+    position: relative;
+    padding: 20px 10px 20px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.decorate:last-child {
+    margin-right: 0;
+}
+
+@media all and (max-width: 690px) {
+    .decorate {
+        margin: 10px 0;
+    }
+}
+
+.scrollBox {
+    max-height: 470px;
+    width: 270px;
+}
+
+.scrollBox .overview {
+    padding-right: 10px;
+}
+
+.scrollBox .scrollbar {
+    border-color: #8F99FF;
+}
+
+.scrollBoxHeader {
+    font-size: 200%;
+    line-height: 130%;
+    font-family: "Lobster Two", "Georgia", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.scrollBoxLine {
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    background-color: transparent;
+    height: 0;
+}
+
+.scrollBox p {
+    margin: 30px 0;
+}
+
+.scrollBox.vertical p:nth-child(3n+3) {
+    color: #666;
+}
+
+.scrollBox.vertical p:nth-child(odd) {
+    background: #444;
+    background: rgba(255,255,255,0.1);
+    padding: 5px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.scrollBox.vertical p:nth-child(odd) {
+    background: #fff;
+    background: rgba(255,255,255,0.8);
+}
+
+
+
+
+
+
+.scrollBox.horizontal {
+    width: 270px;
+    height: 345px;
+}
+
+.scrollBox.horizontal .overview {
+   padding-right: 0;
+}
+
+.scrollBox.horizontal .viewport{
+    height: 95%;
+}
+
+.scrollBox.horizontal .scrollbar {
+    position: absolute;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+}
+.scrollBox.horizontal .thumb {
+    height: 100%;
+}
+
+
+.scrollBox.horizontal p {
+    width: 600px;
+    height: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+
+
+.scrollDown {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #0B736A;
+    position: relative;
+    text-align: center;
+    border: 1px solid rgb(117, 132, 119);
+    background: #C6C7BD;
+    outline: none;
+}
+
+.scrollDown:hover {
+    background: #D9DACE;
+}
+
+.scrollDown:active {
+    background-color: #A7A7A7;
+}
+
+.scrollBox.vertical.scrollDownBtn {
+    max-height: 400px;
+    margin-bottom: 10px;
+}
