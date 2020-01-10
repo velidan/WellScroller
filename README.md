@@ -8,7 +8,7 @@ Can be used in vertical or horizontal orientation. <br> You can customize scroll
 Easy to include and launch in your project.<br>
 Works in all modern browsers and on touch devices.
 
-<a href="http://wellnine.github.io/WellScroller" target="_blank"><b>Documentation and examples</b></a>
+<a href="http://velidan.github.io/WellScroller" target="_blank"><b>Documentation and examples</b></a>
 
 If you want ask me some questions, just send me a letter to this email: 
 <a href="mailto:velidanx@gmail.com">velidanx@gmail.com</a>
